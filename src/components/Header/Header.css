@@ -1,10 +1,12 @@
 .header {
   background-color: #333;
   color: #fff;
-  padding: 20px;
+  padding: 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%; 
+  box-sizing: border-box; 
 }
 
 .header h1 {
@@ -33,12 +35,73 @@
   color: #f57c00;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 375px) and (max-height: 667px) {
+  .header {
+    padding: 8px;
+  }
+
   .header h1 {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   .nav a {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 }
+
+@media (max-width: 390px) and (max-height: 844px) {
+  .header {
+    padding: 6px;
+  }
+
+  .header h1 {
+    font-size: 0.9rem;
+  }
+
+  .nav a {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 393px) and (max-height: 851px) {
+  .header {
+    padding: 6px;
+  }
+
+  .header h1 {
+    font-size: 0.9rem;
+  }
+
+  .nav a {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 412px) and (max-height: 915px) {
+  .header {
+    padding: 5px;
+  }
+
+  .header h1 {
+    font-size: 0.9rem;
+  }
+
+  .nav a {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 280px) and (max-height: 653px) {
+  .header {
+    padding: 2px;
+  }
+
+  .header h1 {
+    font-size: 0.8rem;
+  }
+
+  .nav a {
+    font-size: 0.6rem;
+  }
+}
+
